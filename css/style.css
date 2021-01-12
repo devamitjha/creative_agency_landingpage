@@ -1,0 +1,413 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  font-family: "Roboto";
+}
+
+.dFlex, .container .bg_wrapper, header, header .logo .text_logo, header nav, header .menu_item, section .content_section, section .content_section .search i, section .content_section .info .item, section .content_section .info .item p, section .content_section .info .item i, section .social_section, .footer, .footer .scroll, .footer .slider_info, .footer .slider_info .share, .footer .slider_info .pagination, .footer .slider_info .featured_project, .footer .slider_info .featured_project .slider_nav, .footer .slider_info .featured_project .slider_nav i, .footer_border {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container {
+  display: block;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.container .bg_wrapper {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  z-index: 2;
+}
+
+.container .bg_wrapper .bg_ {
+  width: 12.5%;
+  height: 100vh;
+}
+
+.container .bg_wrapper .bg_ + .bg_ {
+  border-left: 1px solid #eee;
+}
+
+.content_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  z-index: 3;
+}
+
+header {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 9vw;
+}
+
+header .logo {
+  width: 37.5%;
+  height: 100%;
+}
+
+header .logo .text_logo {
+  background-color: #2519ff;
+  width: 33.33%;
+  height: 100%;
+  color: #fff;
+  font-size: 2vw;
+  cursor: pointer;
+}
+
+header nav {
+  width: 50%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-right: 5vw;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+header nav .nav_item {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header nav .nav_item a {
+  font-size: 1vw;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000;
+}
+
+header nav .nav_item a + a {
+  margin-left: 8.5vw;
+}
+
+header .menu_item {
+  width: 12.5%;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+header .menu_item .language {
+  color: #2519ff;
+  font-size: 1vw;
+}
+
+header .menu_item .menu_ span {
+  width: 35px;
+  height: 2px;
+  background-color: #000;
+  display: block;
+  margin-left: 4vw;
+  cursor: pointer;
+}
+
+header .menu_item .menu_ span + span {
+  margin-top: 8px;
+}
+
+section {
+  display: block;
+  padding-top: 4vw;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+section .content_section {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+section .content_section .search {
+  width: 25%;
+  height: 100%;
+}
+
+section .content_section .search i {
+  width: 50%;
+  padding-top: 15%;
+  cursor: pointer;
+}
+
+section .content_section article {
+  width: 50%;
+}
+
+section .content_section article h1 {
+  font-size: 5vw;
+}
+
+section .content_section article h1 span {
+  display: block;
+}
+
+section .content_section article p {
+  font-size: 1.2vw;
+  color: #585858;
+  margin-top: 1.2vw;
+}
+
+section .content_section .info {
+  width: 12.5%;
+}
+
+section .content_section .info .item {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+section .content_section .info .item p {
+  width: 50%;
+  background-color: #2519ff;
+  color: #fff;
+  padding: 15px 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+section .content_section .info .item i {
+  width: 50%;
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+section .content_section .info .item + .item p {
+  width: 100%;
+  font-size: 12px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding-left: 30px;
+}
+
+section .social_section {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding-right: 5%;
+}
+
+section .social_section .fa {
+  cursor: pointer;
+}
+
+section .social_section .fa + .fa {
+  margin-left: 6.3vw;
+}
+
+.footer {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 3vw;
+  position: relative;
+}
+
+.footer .scroll {
+  width: 12.5%;
+  height: 100%;
+  font-size: 1vw;
+  text-transform: uppercase;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
+.footer .scroll p {
+  position: relative;
+  display: inline-block;
+  letter-spacing: 1px;
+}
+
+.footer .scroll span {
+  width: 20px;
+  height: 1px;
+  background-color: #000;
+  display: block;
+  margin-right: 10px;
+}
+
+.footer .slider_info {
+  width: 87.5%;
+  background-color: #2519ff;
+  position: relative;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.footer .slider_info .digital_img {
+  width: 28.57%;
+  height: 100%;
+  margin-right: 14.28%;
+  mix-blend-mode: hard-light;
+}
+
+.footer .slider_info .digital_img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.footer .slider_info .share {
+  width: 60px;
+  height: 60px;
+  background-color: #2519ff;
+  color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.footer .slider_info .pagination {
+  position: absolute;
+  top: 5vw;
+  right: 5%;
+  font-size: 1vw;
+  color: #fff;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  z-index: 2;
+}
+
+.footer .slider_info .pagination .item {
+  display: block;
+  padding-bottom: 5px;
+  cursor: pointer;
+}
+
+.footer .slider_info .pagination span {
+  display: block;
+  width: calc(100% + 5px);
+  height: 1px;
+  background-color: #fff;
+  margin-bottom: 5px;
+}
+
+.footer .slider_info .featured_project {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 57.14%;
+  height: 100%;
+  margin-top: auto;
+  margin-bottom: 8vw;
+  padding-right: 5%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: relative;
+  z-index: 2;
+}
+
+.footer .slider_info .featured_project .info_ {
+  color: #fff;
+}
+
+.footer .slider_info .featured_project .info_ span {
+  text-transform: uppercase;
+  font-size: 1vw;
+}
+
+.footer .slider_info .featured_project .info_ h2 {
+  text-transform: uppercase;
+  font-size: 2vw;
+}
+
+.footer .slider_info .featured_project .slider_nav {
+  width: 20%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer .slider_info .featured_project .slider_nav i {
+  width: 30px;
+  height: 30px;
+  border-radius: 30px;
+  background-color: #fff;
+  color: #2519ff;
+  cursor: pointer;
+}
+
+.footer .slider_info .featured_project .slider_nav i.fa-angle-left {
+  background-color: transparent;
+  color: #fff;
+}
+
+.footer_border {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.footer_border .border_ {
+  width: calc(100% / 7);
+  height: 100%;
+}
+
+.footer_border .border_ + .border_ {
+  border-left: 1px solid rgba(255, 255, 255, 0.3);
+}
+/*# sourceMappingURL=style.css.map */
